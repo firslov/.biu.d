@@ -21,7 +21,7 @@ def ini(commit=None):
     return
 def rt(url):
     try:
-        command = 'git remote add origin ' + url[0]
+        command = 'git remote add origin ' + url
         os.popen(command).read()
         print("Link success!")
     except:
@@ -35,7 +35,7 @@ def cm(commit=None):
             command = 'git commit -m "' + commit +'"'
             os.popen(command).read()
         else:
-            command = 'git commit -m "' + commit[0] +'"'
+            command = 'git commit -m "' + commit +'"'
             os.popen(command).read()
         print("Commit success!")
     except:
