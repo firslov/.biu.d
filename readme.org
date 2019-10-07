@@ -1,0 +1,22 @@
+* .biu.d
+There are some tools for biu.
+** Installation
+#+begin_src 
+git clone https://github.com/firslov/.biu.d ~/.biu.d
+#+end_src
+** Example
+*** git tool:
+init+add+commit
+#+begin_src 
+biu git ini [commit]
+#+end_src
+add+commit+push
+#+begin_src 
+biu git ps [commit]
+#+end_src
+*** shell tool:
+ls
+#+begin_src 
+biu shell ls
+#+end_src
+...
