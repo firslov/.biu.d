@@ -1,16 +1,6 @@
 import os
 import datetime
 
-def help():
-    message = {
-            "ini":"init+add+commit",
-            "cm":"add+commit",
-            "ps":"add+commit+push",
-            "rm":"link remote"
-            }
-    for key,value in message.items():
-        print(f'{key}:\t{value}')
-    return
 def ini(commit=None):
     try:
         os.popen('git init').read()
@@ -49,3 +39,4 @@ def ps(commit=None):
     except:
         print("Push error!")
     return
+
