@@ -1,4 +1,4 @@
-* .biu.d
+* biu.d
 There are some tools for biu.
 ** Installation
 #+begin_src 
